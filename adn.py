@@ -1,4 +1,9 @@
 def obtener_complemento(base):
+    '''
+
+    :param base:
+    :return:
+    '''
     # retorna caracter
     pass
 
