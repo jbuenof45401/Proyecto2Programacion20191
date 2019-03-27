@@ -83,3 +83,6 @@ def unir_cadena(lista_adn):
 def complementar_cadenas(lista_adn):
     pass
 
+
+
+# hola
