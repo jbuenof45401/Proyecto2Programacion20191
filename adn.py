@@ -133,8 +133,6 @@ def obtener_secciones(adn, n):
     >>>obtener_secciones('gtgtgtcacacataga', 4)
     ('gtgt','gtca','caca','taga')
 
-
-
     :param adn: cadena de adn
     :param n: numero de secciones que desea de la cadena
     :return:cadena de adn en secciones
@@ -144,17 +142,46 @@ def obtener_complementos(lista_adn):
     '''
     (list of str) -> list of str
 
-    >>> obtener_complementos('agata')
-    tctat
+    >>> obtener_complementos('gtgt','gtca','caca','taga')
+    ['caca', 'cagt', 'gtgt', 'atct']
 
-    :param lista_adn: str cadena de adn
-    :return: cadena complemetaria de adn
+    :param lista_adn: str secciones de una cadena de adn
+    :return: secciones complementarias complemetaria de una cadena de adn
+
     '''
 
 
 def unir_cadena(lista_adn):
-    pass
+    '''
 
+    (List of str)-> str
+
+    >>>unir_cadena('agta','ttaa','gcta')
+    'agtattaagcta'
+
+    >>>unir_cadena('gccc','ttgg','gata')
+
+    'gcccttgggata'
+
+
+    :param lista_adn: lista de secciones de una cadena de adn
+    :return:cadena de adn
+    '''
 
 def complementar_cadenas(lista_adn):
-    pass
+    '''
+
+    (list of str) -> str
+    >>>complementar_cadenas('agta','ttaa','gcta')
+    'tcataattcgat'
+
+    >>>complementar_cadenas('gccc','ttgg','gata')
+
+    'cgggaaccctat'
+
+
+    :param lista_adn: lista de secciones de una cadena de adn
+    :return: cadena complementaria de adn
+    '''
+
+
