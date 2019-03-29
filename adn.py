@@ -113,6 +113,8 @@ def obtener_complementos(lista_adn):
 
     :param lista_adn: str cadena de adn
     :return: cadena complemetaria de adn
+
+
     '''
 
 
