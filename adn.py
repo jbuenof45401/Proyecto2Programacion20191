@@ -44,22 +44,58 @@ def calcular_correspondencia(adn1, adn2):
 
 
 def corresponden(adn1, adn2):
-    # retorna Bool
-    pass
+    '''
+    (str, str) -> bool: valida la correspondencia entre dos cadenas
+
+    >>> calcular_correspondencia('AGATA','TCTAT')
+    True
+
+    >>> correspondencia('AGATA','GACCG')
+    False
+
+
+    :param adn1: primera cadena a comparar
+    :param adn2: segunda cadena a comparar
+    :return: bool: validacion de la correspondencia
+    '''
 
 
 def es_cadena_valida(adn):
+    '''
+    (str) -> bool: validar si todos las bases son validas en la cadena
 
-    pass
+    >>> es_cadena_valida(AGATA)
+    True
+
+    >>> es_cadena_valida(AGATS)
+    False
+
+    :param adn:
+    :return:
+    '''
+    for base in adn:
+        if not es_base(base):
+            return False
+
+    return True
 
 
 def es_base(caracter):
     '''
+    (char) -> bool: la funcion es base
 
-    :param caracter:
-    :return:
+    >>> es_base('B')
+    False
+
+    >>> es_base('A')
+    True
+
+    >>> es_base('AGATA')
+    ValueError
+
+    :param caracter: base a validar
+    :return: bool: validacion de la base
     '''
-    pass
 
 
 
@@ -122,4 +158,3 @@ def unir_cadena(lista_adn):
 
 def complementar_cadenas(lista_adn):
     pass
-
