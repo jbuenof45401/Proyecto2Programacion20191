@@ -80,13 +80,40 @@ def reparar_dano(adn, base):
     '''
     pass
 
-
 def obtener_secciones(adn, n):
-    pass
+    '''
 
+    (str, num) -> list of str
+
+    >>>obtener_secciones('agtctatcggatagc', 5)
+     ('agt','cta','tcg','gat','agc')
+
+    >>>obtener_secciones('gagatctcagtc', 4)
+    ('gag','atc','tca','gtc')
+
+    >>>obtener_secciones('agtgtc', 3)
+    ('ag','tg','tc')
+
+    >>>obtener_secciones('gtgtgtcacacataga', 4)
+    ('gtgt','gtca','caca','taga')
+
+
+
+    :param adn: cadena de adn
+    :param n: numero de secciones que desea de la cadena
+    :return:cadena de adn en secciones
+    '''
 
 def obtener_complementos(lista_adn):
-    pass
+    '''
+    (list of str) -> list of str
+
+    >>> obtener_complementos('agata')
+    tctat
+
+    :param lista_adn: str cadena de adn
+    :return: cadena complemetaria de adn
+    '''
 
 
 def unir_cadena(lista_adn):
