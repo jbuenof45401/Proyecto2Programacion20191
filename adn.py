@@ -1,14 +1,45 @@
 def obtener_complemento(base):
-    # retorna caracter
+    '''
+    (char)->char: complemento de la base ingresada
+
+    >>> obtener_complemento('A')
+    T
+
+    >>> obtener_complemento('G')
+    C
+
+    :param base: char: base para analizar el complemento
+    :return: char: complemento de la base ingresada
+    '''
     pass
 
-
 def generar_cadena_complementaria(adn):
+    '''
+    (str)-> str: cadena complementaria de la cadena ingresada
+
+    >>> generar_cadena_complementaria('AGATA')
+    TCTAT
+
+    >>> generar_cadena_complementaria('TATATA')
+    ATATAT
+
+    :param adn: str: cadena a analizar
+    :return: str: complemento de la cadena ingresada
+    '''
     pass
 
 
 def calcular_correspondencia(adn1, adn2):
-    # retorna num
+    '''
+    (str,str)-> num: calcula el porcentaje de correspondencia de 2 cadenas dadas
+
+    >>> calcular_correspondencia('AGATA','TCTAT')
+    100
+
+    :param adn1: str: primera cadena a comparar
+    :param adn2: str: segunda cadena a comparar
+    :return: num: porcentaje de correspondencia de las cadenas dadas
+    '''
     pass
 
 
@@ -18,11 +49,18 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
+
     pass
 
 
 def es_base(caracter):
+    '''
+
+    :param caracter:
+    :return:
+    '''
     pass
+
 
 
 def es_subcadena(adn1, adn2):
@@ -30,6 +68,16 @@ def es_subcadena(adn1, adn2):
 
 
 def reparar_dano(adn, base):
+    '''
+    (str,char)->str:cadena reparada
+
+    >>> reparar_dano('AGAPA','T')
+    AGATA
+
+    :param adn: str: la cadena a reparar
+    :param base: char: la base a insertar en la cadena
+    :return: str: la cadena reparada
+    '''
     pass
 
 
