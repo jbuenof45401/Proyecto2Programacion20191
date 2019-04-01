@@ -8,6 +8,13 @@ def obtener_complemento(base):
     >>> obtener_complemento('G')
     C
 
+    >>> obtener_complemento('T')
+    A
+
+    >>> obtener_complemento('C')
+    G
+
+
     :param base: char: base para analizar el complemento
     :return: char: complemento de la base ingresada
     '''
