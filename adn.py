@@ -98,7 +98,6 @@ def es_base(caracter):
     '''
 
 
-
 def es_subcadena(adn1, adn2):
     '''
     (str, str) -> bool: Una funcion es subacdena
@@ -115,9 +114,6 @@ def es_subcadena(adn1, adn2):
     '''
 
 
-    pass
-
-
 def reparar_dano(adn, base):
     '''
     (str,char)->str:cadena reparada
@@ -129,7 +125,6 @@ def reparar_dano(adn, base):
     :param base: char: la base a insertar en la cadena
     :return: str: la cadena reparada
     '''
-    pass
 
 def obtener_secciones(adn, n):
     '''
