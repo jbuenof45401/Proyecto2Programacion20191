@@ -100,6 +100,21 @@ def es_base(caracter):
 
 
 def es_subcadena(adn1, adn2):
+    '''
+    (str, str) -> bool: Una funcion es subacdena
+
+    >>> es_subcadena('AGA', 'AGATA')
+    True
+
+    >>> es_subcadena('AGA', 'GCAC')
+    False
+
+    :param adn1: primera cadena a comparar
+    :param adn2: segunda cadena a comparar
+    :return: validacion y verificacion si una es una subcdena de la otra
+    '''
+
+
     pass
 
 
