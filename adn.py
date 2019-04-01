@@ -54,8 +54,8 @@ def corresponden(adn1, adn2):
     False
 
 
-    :param adn1: primera cadena a comparar
-    :param adn2: segunda cadena a comparar
+    :param adn1: str: primera cadena a comparar
+    :param adn2: str: segunda cadena a comparar
     :return: bool: validacion de la correspondencia
     '''
 
@@ -70,8 +70,8 @@ def es_cadena_valida(adn):
     >>> es_cadena_valida(AGATS)
     False
 
-    :param adn:
-    :return:
+    :param adn: str: cadena a validar
+    :return: bool: validacion de la cadena
     '''
     for base in adn:
         if not es_base(base):
@@ -93,7 +93,7 @@ def es_base(caracter):
     >>> es_base('AGATA')
     ValueError
 
-    :param caracter: base a validar
+    :param caracter: str: base a validar
     :return: bool: validacion de la base
     '''
 
@@ -108,9 +108,9 @@ def es_subcadena(adn1, adn2):
     >>> es_subcadena('AGA', 'GCAC')
     False
 
-    :param adn1: primera cadena a comparar
-    :param adn2: segunda cadena a comparar
-    :return: validacion y verificacion si una es una subcdena de la otra
+    :param adn1: str: primera cadena a comparar
+    :param adn2: str: segunda cadena a comparar
+    :return: bool: validacion y verificacion si una es una subcdena de la otra
     '''
 
 
