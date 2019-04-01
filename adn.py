@@ -47,7 +47,7 @@ def corresponden(adn1, adn2):
     '''
     (str, str) -> bool: valida la correspondencia entre dos cadenas
 
-    >>> calcular_correspondencia('AGATA','TCTAT')
+    >>> correspondencia('AGATA','TCTAT')
     True
 
     >>> correspondencia('AGATA','GACCG')
