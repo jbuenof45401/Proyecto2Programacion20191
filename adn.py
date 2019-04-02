@@ -73,7 +73,6 @@ def calcular_correspondencia(adn1, adn2):
     for base in adn1:
         if obtener_complemento(base) in complemento:
             porcentaje+= (1/ len(adn1))*100
-
     return int(porcentaje)
 
 
@@ -94,10 +93,14 @@ def corresponden(adn1, adn2):
     if not es_cadena_valida(adn1) or not es_cadena_valida(adn2):
         raise TypeError("Alguna de las cadenas no es valida")
 
+    if not es_cadena_valida(adn1) or not es_cadena_valida(adn2):
+        raise TypeError('Alguna cadena no es valida')
+
     if adn2 == generar_cadena_complementaria(adn1):
         return True
     else:
         return False
+
 
 def es_cadena_valida(adn):
     '''
@@ -120,6 +123,7 @@ def es_cadena_valida(adn):
             return False
 
     return True
+
 
 def es_base(caracter):
     '''
