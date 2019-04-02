@@ -199,16 +199,16 @@ def obtener_secciones(adn, n):
     (str, num) -> [str]: obtiene lista de secciones segun numero ingresado
 
     >>> obtener_secciones('agtctatcggatagc', 5)
-     (['agt','cta','tcg','gat','agc'])
+    ['agt', 'cta', 'tcg', 'gat', 'agc']
 
     >>> obtener_secciones('gagatctcagtc', 4)
-    (['gag','atc','tca','gtc'])
+    ['gag', 'atc', 'tca', 'gtc']
 
     >>> obtener_secciones('agtgtc', 3)
-    (['ag','tg','tc'])
+    ['ag', 'tg', 'tc']
 
     >>> obtener_secciones('gtgtgtcacacataga', 4)
-    (['gtgt','gtca','caca','taga'])
+    ['gtgt', 'gtca', 'caca', 'taga']
 
     :param adn: cadena de adn
     :param n: numero de secciones que desea de la cadena
@@ -222,30 +222,32 @@ def obtener_secciones(adn, n):
         raise TypeError('los numeros negativos no son validos')
     elif n == 0:
         raise ZeroDivisionError('No se puede dividir por 0')
-    elif int != (leng(adn)/n):
+    elif int != type(len(adn)//n):
         raise TypeError('la cadena no se puede dividir en esa cantidad de secciones')
 
-    tamano = len(adn)/n
+    tamano = len(adn)//n
     cont = 0
     cont2 = 0
-    arreglo = []
-
+    arreglo = ['']*n
+    adntoAnalise = str(adn)
     while cont2 < n:
-        for base in adn:
-            arreglo[cont2]+=base
+        for base in adntoAnalise:
+            arreglo[cont2]+= base
             cont+=1
             if(cont==tamano):
-                break;
+                break
+        adntoAnalise =  adntoAnalise.replace(str(arreglo[cont2]), '')
         cont = 0
-        cont2+=1
+        cont2 += 1
 
     return arreglo
+
 def obtener_complementos(lista_adn):
     '''
     (list of str) -> list of str
 
     >>> obtener_complementos(['gtgt','gtca','caca','taga'])
-    ['caca', 'cagt', 'gtgt', 'atct']
+    ['CACA', 'CAGT', 'GTGT', 'ATCT']
 
     :param lista_adn: str secciones de una cadena de adn
     :return: secciones complementarias complemetaria de una cadena de adn
@@ -253,17 +255,15 @@ def obtener_complementos(lista_adn):
     '''
 
     contf= 0
-    lista_complemento= []
+    lista_complemento= lista_adn
 
     for cadena in lista_adn:
         if not es_cadena_valida(cadena):
             raise TypeError('la cadena'+ str(cadena) + "no es valida")
-
-        lista_complemento[contf]+=generar_cadena_complementaria(cadena)
+        cadenaComplemento = generar_cadena_complementaria(cadena)
+        lista_complemento[contf] = cadenaComplemento
         contf+=1
-        if(contf==tamano):
-            break;
-        cont = 0
+
     return lista_complemento
 
 
@@ -276,15 +276,15 @@ def unir_cadena(lista_adn):
     'agtattaagcta'
 
     >>> unir_cadena(['gccc','ttgg','gata'])
-
     'gcccttgggata'
+
 
 
     :param lista_adn: lista de secciones de una cadena de adn
     :return:cadena de adn
     '''
     k= len(lista_adn)
-    cadena_resultante = string
+    cadena_resultante = ''
     contg= 0
 
     for cadena in lista_adn:
@@ -300,18 +300,17 @@ def unir_cadena(lista_adn):
 
 def complementar_cadenas(lista_adn):
     '''
-    (list of str) -> str
+    (list of str) -> str:
     >>> complementar_cadenas(['agta','ttaa','gcta'])
-    'tcataattcgat'
+    'TCATAATTCGAT'
 
     >>> complementar_cadenas(['gccc','ttgg','gata'])
-    'cgggaaccctat'
+    'CGGGAACCCTAT'
 
 
     :param lista_adn: lista de secciones de una cadena de adn
     :return: cadena complementaria de adn
     '''
-    pass
 
     lista_complementos= obtener_complementos(lista_adn)
 
