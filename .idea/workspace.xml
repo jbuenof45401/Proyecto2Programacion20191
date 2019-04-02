@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d402b977-8e27-41cd-8006-61b4c54e421c" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas.py" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/Proyecto2Programacion20191.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Proyecto2Programacion20191.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adn.py" beforeDir="false" afterPath="$PROJECT_DIR$/adn.py" afterDir="false" />
 
+>>>>>>> master
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +19,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-240">
+              <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pruebas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+=======
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
             <state relative-caret-position="307">
               <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -39,6 +63,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/adn.py" />
+        <option value="$PROJECT_DIR$/pruebas.py" />
       </list>
     </option>
   </component>
@@ -66,45 +91,14 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="Python tests.Unittests for pruebas.pruebas.test_es_subcadena">
+    <configuration name="Doctest es_cadena_valida" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+=======
 
   <component name="RunManager" selected="Python tests.Doctest es_cadena_valida">
     <configuration name="Doctest corresponden (1)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto2Programacion20191" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adn.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="corresponden" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Doctest corresponden" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto2Programacion20191" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adn.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="corresponden" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Doctest es_cadena_valida" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+>>>>>>> master
       <module name="Proyecto2Programacion20191" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,11 +116,69 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_corresponden" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_corresponden&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_es_base" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_es_base&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_es_cadena_valida" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_es_cadena_valida&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_es_subcadena" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_es_subcadena&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_es_subcadena" />
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_es_base" />
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_es_cadena_valida" />
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_corresponden" />
         <item itemvalue="Python tests.Doctest es_cadena_valida" />
-        <item itemvalue="Python tests.Doctest corresponden" />
-        <item itemvalue="Python tests.Doctest corresponden (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -146,21 +198,6 @@
   </component>
 
   <component name="TestHistory">
-    <history-entry file="Doctest_corresponden - 2019.03.31 at 22h 25m 04s.xml">
-      <configuration name="Doctest corresponden" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_corresponden - 2019.03.31 at 22h 28m 59s.xml">
-      <configuration name="Doctest corresponden" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_corresponden - 2019.03.31 at 22h 29m 44s.xml">
-      <configuration name="Doctest corresponden" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_corresponden_(1) - 2019.03.31 at 22h 30m 12s.xml">
-      <configuration name="Doctest corresponden (1)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_corresponden - 2019.03.31 at 22h 33m 16s.xml">
-      <configuration name="Doctest corresponden" configurationId="tests" />
-    </history-entry>
     <history-entry file="Doctest_corresponden - 2019.03.31 at 22h 36m 26s.xml">
       <configuration name="Doctest corresponden" configurationId="tests" />
     </history-entry>
@@ -169,6 +206,27 @@
     </history-entry>
     <history-entry file="Doctest_es_cadena_valida - 2019.03.31 at 22h 55m 19s.xml">
       <configuration name="Doctest es_cadena_valida" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_corresponden - 2019.04.02 at 02h 18m 22s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_corresponden" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_es_cadena_valida - 2019.04.02 at 02h 19m 01s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_es_cadena_valida" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_es_base - 2019.04.02 at 02h 22m 18s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_es_base" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_es_base - 2019.04.02 at 02h 25m 42s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_es_base" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_es_base - 2019.04.02 at 02h 28m 20s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_es_base" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_es_base - 2019.04.02 at 02h 28m 41s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_es_base" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_es_subcadena - 2019.04.02 at 02h 46m 44s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_es_subcadena" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -195,13 +253,47 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/adn.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-240">
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+=======
         <state relative-caret-position="-304">
           <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
 
+>>>>>>> master
         </state>
       </provider>
     </entry>

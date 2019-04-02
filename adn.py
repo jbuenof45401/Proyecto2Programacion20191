@@ -30,7 +30,6 @@ def obtener_complemento(base):
 
     return 'G'
 
-
 def generar_cadena_complementaria(adn):
     '''
     (str)-> str: cadena complementaria de la cadena ingresada
@@ -149,6 +148,7 @@ def es_base(caracter):
     else:
         return False
 
+
 def es_subcadena(adn1, adn2):
     '''
     (str, str) -> bool: Una funcion es subacdena
@@ -166,10 +166,11 @@ def es_subcadena(adn1, adn2):
     if not es_cadena_valida(adn1) or not es_cadena_valida(adn2):
         raise TypeError("Las cadenas no son validas")
 
-    if adn1 in adn2:
+    if adn2 in adn1:
         return True;
     else:
         return False
+
 
 def reparar_dano(adn, base):
     '''
@@ -191,8 +192,6 @@ def reparar_dano(adn, base):
             adnfixed += base
 
     return adnfixed
-
-
 
 def obtener_secciones(adn, n):
     '''
@@ -269,7 +268,6 @@ def obtener_complementos(lista_adn):
 
 def unir_cadena(lista_adn):
     '''
-
     (List of str)-> str
 
     >>> unir_cadena(['agta','ttaa','gcta'])
