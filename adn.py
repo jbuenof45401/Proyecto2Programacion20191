@@ -71,10 +71,10 @@ def es_cadena_valida(adn):
     '''
     (str) -> bool: validar si todos las bases son validas en la cadena
 
-    >>> es_cadena_valida(AGATA)
+    >>> es_cadena_valida('AGATA')
     True
 
-    >>> es_cadena_valida(AGATS)
+    >>> es_cadena_valida('AGATS')
     False
 
     :param adn: str: cadena a validar
