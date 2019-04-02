@@ -310,6 +310,6 @@ def complementar_cadenas(lista_adn):
     :return: cadena complementaria de adn
     '''
 
-    lista_complementos= obtener_complementos(lista_adn)
+    lista_complementos = obtener_complementos(lista_adn)
 
     return unir_cadena(lista_complementos)

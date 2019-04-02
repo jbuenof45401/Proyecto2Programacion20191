@@ -36,6 +36,13 @@ class pruebas(unittest.TestCase):
         self.assertRaises(TypeError,ADN.obtener_secciones,'asdsdfdsf',0)
     def test_obtener_complementos(self):
         self.assertEqual(ADN.obtener_complementos(['gtgt','gtca','caca','taga']),['CACA', 'CAGT', 'GTGT', 'ATCT'])
-        
+    def test_unir_cadenas(self):
+        self.assertEqual(ADN.unir_cadenas(['agt','cta','gcc']),'agtctagcc')
+        self.assertEqual(ADN.unir_cadenas(['agc','ggg','ttt']),'agcgggttt')
+        self.assertRaises(TypeError, ADN.unir_cadenas,['agt','gcc','ugt'])
+    def test_complementar_cadenas(self):
+        self.assertEqual(ADN.complementar_cadenas(['agt','cta','gcc']),'tcagatcgg')
+        self.assertEqual(ADN.complementar_cadenas(['agc','ggg','ttt']),'tcgcccaaa')
+
 if __name__== 'main':
     unittest.main()
