@@ -166,7 +166,7 @@ def es_subcadena(adn1, adn2):
     if not es_cadena_valida(adn1) or not es_cadena_valida(adn2):
         raise TypeError("Las cadenas no son validas")
 
-    if adn1 in adn2:
+    if adn2 in adn1:
         return True;
     else:
         return False
