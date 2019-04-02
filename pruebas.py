@@ -19,7 +19,7 @@ class pruebas(unittest.TestCase):
         self.assertEqual(ADN.es_base(B), False)
         self.assertEqual(ADN.es_base(C), True)
         self.assertEqual(ADN.es_base(D), False)
-        self.assertRaises(TypeError,ADN.es_base, 'caracter')
+        self.assertRaises(TypeError,ADN.es_base, 'base')
     def test_es_subcadena(self):
         self.assertEqual(ADN.es_subcadena(TAGA, TAG), True)
         self.assertEqual(ADN.es_subcadena(GATA, ATCT), False)
