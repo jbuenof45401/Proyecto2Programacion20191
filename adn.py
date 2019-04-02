@@ -51,13 +51,6 @@ def calcular_correspondencia(adn1, adn2):
 
 
 def corresponden(adn1, adn2):
-    if adn2 == generar_cadena_complementaria(adn1):
-        return True
-    else:
-        return False
-
-
-def es_cadena_valida(adn):
     '''
     (str, str) -> bool: valida la correspondencia entre dos cadenas
 
@@ -67,11 +60,18 @@ def es_cadena_valida(adn):
     >>> corresponden('AGATA','GACCG')
     False
 
-
     :param adn1: str: primera cadena a comparar
     :param adn2: str: segunda cadena a comparar
     :return: bool: validacion de la correspondencia
     '''
+
+    if not es_cadena_valida(adn1) or not es_cadena_valida(adn2):
+        raise TypeError('Alguna cadena no es valida')
+
+    if adn2 == generar_cadena_complementaria(adn1):
+        return True
+    else:
+        return False
 
 
 def es_cadena_valida(adn):
@@ -87,16 +87,16 @@ def es_cadena_valida(adn):
     :param adn: str: cadena a validar
     :return: bool: validacion de la cadena
     '''
+
+    if string != Type(adn):
+        raise TypeError('Ingrese una cadena valida')
+
     for base in adn:
         if not es_base(base):
             return False
 
     return True
 
-    if adn == obtener_complemento(base):
-        return True
-    else:
-        return False
 
 def es_base(caracter):
     '''
@@ -115,8 +115,9 @@ def es_base(caracter):
     :return: bool: validacion de la base
     '''
 
+    base = 'ATGCatgc'
     if len(caracter) != 1:
-        return ValueError(caracter + 'tiene más de un caracter');
+        return ValueError(str(caracter) + 'tiene más de un caracter');
     elif caracter in base:
         return True
     else:
@@ -136,6 +137,10 @@ def es_subcadena(adn1, adn2):
     :param adn2: str: segunda cadena a comparar
     :return: bool: validacion y verificacion si una es una subcdena de la otra
     '''
+
+    if not es_cadena_valida(adn1) or not es_cadena_valida(adn2):
+        raise TypeError('Las cadenas no son validas')
+
     if adn1 in adn2:
         return True;
     elif adn2 in adn1:
