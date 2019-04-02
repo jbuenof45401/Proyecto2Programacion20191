@@ -80,12 +80,7 @@ def es_cadena_valida(adn):
     :param adn: str: cadena a validar
     :return: bool: validacion de la cadena
     '''
-    for base in adn:
-        if not es_base(base):
-            return False
-
-    return True
-
+   
 
 def es_base(caracter):
     '''
