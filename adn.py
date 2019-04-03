@@ -153,7 +153,7 @@ def es_subcadena(adn1, adn2):
     '''
     (str, str) -> bool: Una funcion es subacdena
 
-    >>> es_subcadena('AGA', 'AGATA')
+    >>> es_subcadena('AGATA', 'AGA')
     True
 
     >>> es_subcadena('AGA', 'GCAC')
@@ -291,8 +291,7 @@ def unir_cadena(lista_adn):
 
         cadena_resultante +=cadena
         contg+=1
-        if(contg==k):
-            break;
+
 
     return cadena_resultante
 
@@ -313,3 +312,14 @@ def complementar_cadenas(lista_adn):
     lista_complementos= obtener_complementos(lista_adn)
 
     return unir_cadena(lista_complementos)
+
+
+def validar_complentos_de_archivos():
+    '''
+    (doc.txt)-> []str
+
+
+
+
+    :return:
+    '''
