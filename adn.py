@@ -323,22 +323,26 @@ def validar_complentos_de_archivos():
     '''
     (doc.txt)-> []str
 
+    lee un archivo y verifica la correspondencia de sus cadenas
 
-
-
-    :return:
+    :return: str: mensaje con la correspondencia de las cadenas
     '''
     f = open("cadenas.txt", "r")
     cadena = f.readline()
     cadena = cadena.rstrip()
-    if(es_cadena_valida(cadena)):
-        complemento =  generar_cadena_complementaria(cadena)
+    if (es_cadena_valida(cadena)):
+        complemento = generar_cadena_complementaria(cadena)
         cadena2 = f.readline()
         cadena2 = cadena2.rstrip()
-        if(complemento == cadena2):
-            return 'Las cadenas estan bien'
+        if not es_cadena_valida(cadena2):
+            return 'la cadena dos no es valida'
+        if (complemento == cadena2):
+            return 'Las cadenas son correspondientes al 100%'
         else:
-            correspondencia =  calcular_correspondencia(cadena2,cadena)
+            correspondencia = calcular_correspondencia(cadena, cadena2)
             return 'La corespondencia de las cadenas es del ' + str(correspondencia) + '%'
     else:
         return 'la cadena ' + cadena + ' no es valida'
+
+
+validar_complentos_de_archivos()
