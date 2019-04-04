@@ -45,5 +45,6 @@ class pruebas(unittest.TestCase):
         self.assertEqual(cadena.complementar_cadenas(['agt','cta','gcc']),'TCAGATCGG')
         self.assertEqual(cadena.complementar_cadenas(['agc','ggg','ttt']),'TCGCCCAAA')
 
+
 if __name__== 'main':
     unittest.main()
