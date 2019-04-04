@@ -69,9 +69,14 @@ def calcular_correspondencia(adn1, adn2):
         raise TypeError("La cadena " + str(adn2) + " no es valida" )
     complemento = adn2
     porcentaje = 0
+    cont = 0
+    longitud = len(complemento)
     for base in adn1:
-        if obtener_complemento(base) in complemento:
-            porcentaje+= (1/ len(adn1))*100
+        if obtener_complemento(base) == complemento[cont]:
+            porcentaje += (1/ len(adn1))*100
+        cont+=1
+        if(cont==longitud):
+            break
     return int(porcentaje)
 
 
@@ -323,3 +328,17 @@ def validar_complentos_de_archivos():
 
     :return:
     '''
+    f = open("cadenas.txt", "r")
+    cadena = f.readline()
+    cadena = cadena.rstrip()
+    if(es_cadena_valida(cadena)):
+        complemento =  generar_cadena_complementaria(cadena)
+        cadena2 = f.readline()
+        cadena2 = cadena2.rstrip()
+        if(complemento == cadena2):
+            return 'Las cadenas estan bien'
+        else:
+            correspondencia =  calcular_correspondencia(cadena2,cadena)
+            return 'La corespondencia de las cadenas es del ' + str(correspondencia) + '%'
+    else:
+        return 'la cadena ' + cadena + ' no es valida'
